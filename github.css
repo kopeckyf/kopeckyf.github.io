@@ -8,7 +8,7 @@ body {
   font-size: 14pt;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 992px) {
   body {
     width:80%;
   }
