@@ -24,7 +24,6 @@ html{
     src: url('SourceSans3-Regular.woff') format('woff');
 }
 
-
 @font-face{
     font-family: 'Source Sans 3';
     font-weight: 400;
@@ -43,10 +42,10 @@ html{
 
 body {
     font-family: 'Source Sans 3';
-    width:40%;
+    width: 40%;
     text-align: left;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
     margin-top: 0;
     background: var(--background-colour);
     color: var(--text-colour);
@@ -104,15 +103,21 @@ a:hover{
     text-decoration: underline;
 }
 
-p, dl, ol, ul {
+p, dl, ol, ul, details {
     line-height: 1.75rem;
     font-size: large;
+    vertical-align: baseline;
 }
 
-p {
+p, details {
     margin-top: 1.4rem;
     margin-bottom: 1.4rem;
-    vertical-align: baseline;
+}
+
+details {
+    border: 1px dashed #aaa;
+    border-radius: 4px;
+    padding: 0.5rem;
 }
 
 p.quote {
